@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+       
+        System.out.println("Enter marks for 5 subjects:");
+        
+        int total = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.print("Subject " + i + " marks: ");
+            int marks = scanner.nextInt();
+            total += marks;
+        }
+        
+        
+        float average = total / 5.0f;
+        
+        
+        System.out.println("\nTotal marks: " + total);
+        System.out.println("Average marks: " + average);
+        
+      
+}
