@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        System.out.print("Enter the radius of circle: ");
+        float radius = scanner.nextFloat();
+        
+        
+        float area = (float) (Math.PI * radius * radius);
+        
+
+        System.out.println("Area of circle: " + area);
+        
+        scanner.close();
+    }
+
