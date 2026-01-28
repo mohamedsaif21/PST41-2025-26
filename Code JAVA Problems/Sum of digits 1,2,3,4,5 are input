@@ -1,0 +1,18 @@
+package PST;
+
+public class Digits {
+	public static void main(String[] args) {
+		int[] digits = {1,2,3,4,5};
+		int sum = 0;
+		for (int digit : digits) {
+			sum +=digit;
+		}
+		System.out.println("sum:"+sum);
+		//sum = 0
+		//sum = 0 + 1
+		//sum = 1 + 2
+		//sum = 3 + 3
+		//sum = 6 + 4
+		//sum = 10 + 5
+	}
+}
