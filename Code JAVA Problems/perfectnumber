@@ -1,0 +1,22 @@
+package PST;
+import java.util.Scanner;
+public class perfectnumber {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		
+		//if the number is 6 then it come from the table 1+2+3 is perfect number
+		//if the number is 12 then it come from the table 1+2+3+4+6 is perfect number
+		int n = in.nextInt();
+		int sum=0;
+		for(int i=1; i<n;i++) {
+			if ( n%i==0) {
+				sum+=i;
+			
+			}
+		}
+		System.out.println(sum==n?"True":"False");
+	}
+}
