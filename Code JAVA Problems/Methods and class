@@ -1,0 +1,31 @@
+package PST;
+
+public class method {	
+	public static void main(String[] args) {
+		method2 x = new method2();
+		x.vertise();
+		x.growitt();
+		
+		method3 y=new method3();
+		y.dinesh();
+	}
+}
+class method2{				
+		public static void vertise() {
+			String a = "saif";
+			System.out.println(a);	
+		}
+		public static void growitt() {
+			String a = "dinesh";
+			System.out.println(a);	
+		}
+		 
+	}
+
+class method3{			
+		public static void dinesh() {
+			String a = "saif";
+			System.out.println(a);	
+		}
+		
+}
