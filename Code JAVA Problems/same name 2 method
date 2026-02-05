@@ -1,0 +1,27 @@
+package PST;
+
+public class same_name_2_method {
+	
+	public static void main(String[]args) {
+		
+		int a=2,b=3,c=4;
+		System.out.println(name(a,b));
+		System.out.println(name2(a,b,c));
+		
+		
+	}
+	
+	public static int name(int a,int b) {
+		
+		return a+b;
+		
+	}
+	
+	public static int name2(int a, int b ,int c) {
+		
+	
+		return a+b+c;
+		
+	}
+
+}
