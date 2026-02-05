@@ -1,0 +1,34 @@
+package PST;
+
+public class oop_class {
+	//connect the two class
+	
+	
+	public static void main(String[]args) {	
+	
+		  classA Obj = new classA();
+		   Obj.cse();
+		
+	}
+}// singleInheritance
+class classA {
+	//parent class
+	public void cse() {
+		
+		System.out.println("Just learn");
+			
+	}
+	
+class classB extends classA{
+	//child class
+		public void it() {
+		classA y=new classA();
+		y.cse();	
+		System.out.println("hello");
+			
+	}
+		
+	}
+	
+}
+//classB is method over raiding
