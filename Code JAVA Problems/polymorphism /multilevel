@@ -1,0 +1,36 @@
+package polymorphism;
+
+public class multilevel {
+	
+	public static void main(String[]args) {
+		
+		classA a = new classA();
+		classA b = new classB();
+		classA c = new classC();
+		a.multi();
+		b.multi();
+		c.multi();	
+	}
+}
+
+//A(superclass)--->B(subclass)--->C(class) 
+	
+class classA { //(Grandparent/Base class)
+		public void multi() {
+			System.out.println("this is Base class");
+			
+		}
+	}	
+class classB extends classA { // (Parent/Intermediate class)
+		public void multi() {
+			System.out.println("this is intermediate class");
+		}
+	}
+class classC extends classB{ // (Child/Derived class) 
+		public void multi() {
+			System.out.println("this is derived class");
+			
+		}
+	
+}
+
