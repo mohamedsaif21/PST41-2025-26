@@ -1,0 +1,30 @@
+package polymorphism;
+
+public class Hierarchical {
+	
+	public static void main(String[] args) {
+		student a=new student();
+		teacher b=new teacher();
+		a.Student();
+		b.Teacher();
+
+}
+}
+// (base class)[A] --->into 2 derived class[B][C]
+
+class School{
+	public void school() {
+		System.out.println("This is my school");
+	}
+}
+class student extends School{
+	public void Student() {
+		System.out.println("This is my student ");
+		
+	}
+}
+class teacher extends School{
+	public void Teacher() {
+		System.out.println("This is my teacher");
+	}
+}
