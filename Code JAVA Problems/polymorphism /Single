@@ -1,5 +1,29 @@
 package polymorphism;
 
 public class Single {
+	public static void main(String[] args) {
+	    
+	     saif x = new saif();
+
+	
+	     x.eat();
+
+	   
+	     x.bark();
+	 }
 
 }
+
+class vertise {
+ public void eat() {
+     System.out.println("This is a company");
+ }
+}
+
+
+class saif extends vertise {
+ public void bark() {
+     System.out.println("I am the co founder ");
+ }
+}
+
