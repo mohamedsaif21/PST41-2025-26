@@ -1,16 +1,28 @@
-package polymorphism;
+package Conversion;
 
 import java.util.Scanner;
 
 public class String_to_int {
-	
-	public static void main(String[]args) {
-		Scanner x = new Scanner(System.in);
-		 System.out.print("Enter the number of elements : ");
-	        String s= x.nextLine();	
-	
-	        int y = Integer.parseInt(s);
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter the number as a string: ");
+	        String strNum = sc.nextLine();
 
-	        System.out.println("" + y);
+	        int num = 0;
+	        int length = strNum.length();
+	        
+	   	    for (int i = 0; i < length; i++) {
+	        char digitChar = strNum.charAt(i);
+	            
+	            
+	        int digit = digitChar - '0'; 
+	          
+	           
+	        num = num * 10 + digit;
+	        }
+
+	     
+	        System.out.println("Converted integer: " + num);
+	        
+	    }
 	}
-}
