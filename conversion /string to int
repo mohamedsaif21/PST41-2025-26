@@ -1,0 +1,16 @@
+package polymorphism;
+
+import java.util.Scanner;
+
+public class String_to_int {
+	
+	public static void main(String[]args) {
+		Scanner x = new Scanner(System.in);
+		 System.out.print("Enter the number of elements : ");
+	        String s= x.nextLine();	
+	
+	        int y = Integer.parseInt(s);
+
+	        System.out.println("" + y);
+	}
+}
