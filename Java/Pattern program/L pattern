@@ -1,0 +1,28 @@
+package Pattern_problem;
+import java.util.Scanner;
+
+public class L_pattern {
+	
+	public static void main(String[]args) {
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the number:");
+		int n= sc.nextInt();
+		printL(n);
+		
+	
+}
+	static void printL(int n)
+	{
+		for (int i=1;i<n;i++) {
+			System.out.println("*");
+	 
+ }
+		for (int i=1;i<=n;i++) {
+			System.out.print("* ");
+	 
+ }
+		System.out.println();
+}
+}
